@@ -96,20 +96,23 @@ struct ContentView: View {
                 )
             
             ZStack {
-                Rectangle()
+                RoundedRectangle(cornerRadius: 10, style: .continuous)
                     .fill(Color.white)
-                    .border(Color.black, width: 1)
+//                    .border(Color.black, width: 1)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .stroke(Color.black, lineWidth: 1)
+                    )
                 
                 VStack(alignment: .leading, spacing: 16) {
                     Text("Your daily schedule")
                         .black()
                         .padding([.leading, .trailing])
-//                        .offset(y: 15)
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.black, lineWidth: 1)
+//                            .stroke(Color.black, lineWidth: 0.5)
                             .frame(height: 1)
-//                            .offset(y: -15)
+                            .foregroundColor(.black)
                             
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(alignment: .top) {
@@ -165,17 +168,21 @@ struct ContentView: View {
             .padding(.bottom, -25)
             .padding([.leading, .trailing])
             
-            Rectangle()
+            RoundedRectangle(cornerRadius: 10, style: .continuous)
                 .fill(Color.red)
-                .border(Color.black
-                        , width: 1)
+//                .border(Color.black, width: 1)
                 .frame(height: 30)
-                .padding([.leading, .trailing])
+                
                 .overlay(
                     Text("You didn't drink at 11:00. One more cup?")
                         .foregroundColor(.white)
                         .bold()
                 )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .stroke(Color.black, lineWidth: 1)
+                )
+                .padding([.leading, .trailing])
                 .offset(y: -1)
             
             HStack(alignment: .bottom, spacing: 20) {
