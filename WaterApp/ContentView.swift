@@ -103,14 +103,15 @@ struct ContentView: View {
                 VStack(alignment: .leading, spacing: 16) {
                     Text("Your daily schedule")
                         .black()
+                        .padding([.leading, .trailing])
 //                        .offset(y: 15)
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.black, lineWidth: 3)
+                            .stroke(Color.black, lineWidth: 1)
                             .frame(height: 1)
-                            .offset(y: -15)
+//                            .offset(y: -15)
                             
-                        ScrollView(.horizontal, showsIndicators: true) {
+                        ScrollView(.horizontal, showsIndicators: false) {
                             HStack(alignment: .top) {
                                 VStack {
                                     TriangleView(size: 20, status: .success)
@@ -152,12 +153,12 @@ struct ContentView: View {
                                     TriangleView(size: 20, status: .notYet)
                                     Text("24:00").black()
                                 }
-                            }
+                            }.padding([.leading, .trailing])
 //                            .frame(height: 80)
 //                            .offset(y: 15)
                         }
                     }
-                }.padding([.leading, .trailing])
+                }
             }
             .frame(height: 110)
             .offset(x: 0, y: -25)
@@ -175,6 +176,7 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .bold()
                 )
+                .offset(y: -1)
             
             HStack(alignment: .bottom, spacing: 20) {
                 VStack(spacing: 5) {
