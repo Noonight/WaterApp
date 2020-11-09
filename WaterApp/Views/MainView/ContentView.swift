@@ -18,11 +18,23 @@ struct ContentView: View {
         VStack(spacing: 0) {
             
             WaveView(progress: progress, strength: waveLength)
-                .overlay(TopBarWaveView(), alignment: .top)
                 .overlay(
-                    BottomBarWaveView()
-                        .padding(.bottom, 16)
-//                        .offset(y: -16)
+                    HStack {
+                        StatisticButton()
+                        Spacer()
+                        SettingsButton()
+                    }
+                    .padding()
+                    , alignment: .top)
+                .overlay(
+                    HStack {
+                        DailyCupsView()
+                        Spacer()
+                        DailyGoalView()
+                    }
+                    .frame(height: 100)
+                    .padding([.leading, .trailing])
+                    .padding(.bottom, 16)
                     , alignment: .bottom)
                 .overlay(StateWaveView())
             
