@@ -16,7 +16,7 @@
 		D912F7B425592A3E00944235 /* DailyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7B325592A3E00944235 /* DailyGoalView.swift */; };
 		D912F7B825592B5E00944235 /* StatisticButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7B725592B5E00944235 /* StatisticButton.swift */; };
 		D912F7BB25592B8200944235 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7BA25592B8200944235 /* SettingsButton.swift */; };
-		D919A38C254DABCA003C3F42 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919A38B254DABCA003C3F42 /* TriangleView.swift */; };
+		D919A38C254DABCA003C3F42 /* CupScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919A38B254DABCA003C3F42 /* CupScheduleView.swift */; };
 		D919A391254DBFC9003C3F42 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919A390254DBFC8003C3F42 /* RoundedCorner.swift */; };
 		D973E85B254BACF50017FD6A /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973E85A254BACF50017FD6A /* WaveView.swift */; };
 		D973E85E254BB79D0017FD6A /* WaveView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973E85D254BB79D0017FD6A /* WaveView2.swift */; };
@@ -40,7 +40,7 @@
 		D912F7B325592A3E00944235 /* DailyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalView.swift; sourceTree = "<group>"; };
 		D912F7B725592B5E00944235 /* StatisticButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticButton.swift; sourceTree = "<group>"; };
 		D912F7BA25592B8200944235 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
-		D919A38B254DABCA003C3F42 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		D919A38B254DABCA003C3F42 /* CupScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupScheduleView.swift; sourceTree = "<group>"; };
 		D919A390254DBFC8003C3F42 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		D973E85A254BACF50017FD6A /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		D973E85D254BB79D0017FD6A /* WaveView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView2.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		D919A38A254DABBC003C3F42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D919A38B254DABCA003C3F42 /* TriangleView.swift */,
+				D919A38B254DABCA003C3F42 /* CupScheduleView.swift */,
 				D998C5812553E1A5006E71FE /* MainView */,
 			);
 			path = Views;
@@ -246,7 +246,7 @@
 				D912F7B425592A3E00944235 /* DailyGoalView.swift in Sources */,
 				D9D86D60254B104F001EDFF1 /* ContentView.swift in Sources */,
 				D912F7A22555B72D00944235 /* StateWaveView.swift in Sources */,
-				D919A38C254DABCA003C3F42 /* TriangleView.swift in Sources */,
+				D919A38C254DABCA003C3F42 /* CupScheduleView.swift in Sources */,
 				D9D86D5E254B104F001EDFF1 /* WaterAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

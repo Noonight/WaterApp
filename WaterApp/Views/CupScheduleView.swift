@@ -7,30 +7,30 @@
 
 import SwiftUI
 
-struct Triangle: Shape {
-    let size: Double
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-        
-        path.move(to: .zero)
-        path.addLine(to: CGPoint(x: 0.0, y: size))
-        path.addLine(to: CGPoint(x: size, y: size / 2))
-//        path.addLine(to: CGPoint(x: 0, y: 0))
-        path.closeSubpath()
-        
-        return path
-    }
-}
+//struct Triangle: Shape {
+//    let size: Double
+//    func path(in rect: CGRect) -> Path {
+//        var path = Path()
+//
+//        path.move(to: .zero)
+//        path.addLine(to: CGPoint(x: 0.0, y: size))
+//        path.addLine(to: CGPoint(x: size, y: size / 2))
+////        path.addLine(to: CGPoint(x: 0, y: 0))
+//        path.closeSubpath()
+//
+//        return path
+//    }
+//}
 
-enum TriangleState {
+enum CupScheduleState {
     case success
     case fail
     case notYet
 }
 
-struct TriangleView: View {
+struct CupScheduleView: View {
     @State var size: Double
-    @State var status: TriangleState
+    @State var status: CupScheduleState
     
     var body: some View {
         switch status {
@@ -75,6 +75,6 @@ struct TriangleView: View {
 
 struct Triangle_Previews: PreviewProvider {
     static var previews: some View {
-        TriangleView(size: 100, status: .success)
+        CupScheduleView(size: 100, status: .success)
     }
 }

@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ScheduleItem: Hashable {
-    var state: TriangleState = .notYet
+struct ScheduleItemModel: Hashable {
+    var state: CupScheduleState = .notYet
     private var time: Date
     
     var hourMinute: String {
@@ -23,7 +23,7 @@ struct ScheduleItem: Hashable {
         }
     }
     
-    init(state: TriangleState = .notYet, time: Date) {
+    init(state: CupScheduleState = .notYet, time: Date) {
         self.state = state
         self.time = time
     }
@@ -50,18 +50,18 @@ struct ScheduleView: View {
         return Calendar.current.date(from: generateDateComponent()) ?? Date()
     }
     
-    var arrayOfSchedule: Array<ScheduleItem> = []
+    var arrayOfSchedule: Array<ScheduleItemModel> = []
     
     init() {
-        self.arrayOfSchedule.append(ScheduleItem(state: .success, time: genDate()))
-        self.arrayOfSchedule.append(ScheduleItem(state: .success, time: genDate()))
-        self.arrayOfSchedule.append(ScheduleItem(state: .fail, time: genDate()))
-        self.arrayOfSchedule.append(ScheduleItem(state: .fail, time: genDate()))
-        self.arrayOfSchedule.append(ScheduleItem(state: .success, time: genDate()))
-        self.arrayOfSchedule.append(ScheduleItem(state: .success, time: genDate()))
-        self.arrayOfSchedule.append(ScheduleItem(time: genDate()))
-        self.arrayOfSchedule.append(ScheduleItem(time: genDate()))
-        self.arrayOfSchedule.append(ScheduleItem(time: genDate()))
+        self.arrayOfSchedule.append(ScheduleItemModel(state: .success, time: genDate()))
+        self.arrayOfSchedule.append(ScheduleItemModel(state: .success, time: genDate()))
+        self.arrayOfSchedule.append(ScheduleItemModel(state: .fail, time: genDate()))
+        self.arrayOfSchedule.append(ScheduleItemModel(state: .fail, time: genDate()))
+        self.arrayOfSchedule.append(ScheduleItemModel(state: .success, time: genDate()))
+        self.arrayOfSchedule.append(ScheduleItemModel(state: .success, time: genDate()))
+        self.arrayOfSchedule.append(ScheduleItemModel(time: genDate()))
+        self.arrayOfSchedule.append(ScheduleItemModel(time: genDate()))
+        self.arrayOfSchedule.append(ScheduleItemModel(time: genDate()))
     }
     
     var body: some View {
@@ -86,9 +86,9 @@ struct ScheduleView: View {
                         
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(alignment: .top) {
-                            ForEach(arrayOfSchedule, id: \.self) { (item: ScheduleItem) in
+                            ForEach(arrayOfSchedule, id: \.self) { (item: ScheduleItemModel) in
                                 VStack {
-                                    TriangleView(size: 20, status: item.state)
+                                    CupScheduleView(size: 20, status: item.state)
                                     Text(item.hourMinute).black()
                                 }.frame(width: 50)
                             }
