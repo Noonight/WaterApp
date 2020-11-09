@@ -25,7 +25,7 @@ struct Wave: Shape {
         let width = Double(rect.width)
         let height = Double(rect.height)
         let midWidth = width / 2
-        let midHeight = height / 2
+//        let midHeight = height / 2
         let oneOverMidWidth = 1 / midWidth
         let progressHeight = height * (1 - progress)
 

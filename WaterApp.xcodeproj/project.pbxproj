@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D912F7A22555B72D00944235 /* StateWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7A12555B72D00944235 /* StateWaveView.swift */; };
+		D912F7A52555B7F500944235 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7A42555B7F500944235 /* ScheduleView.swift */; };
+		D912F7A825590EA200944235 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7A725590EA200944235 /* AlertView.swift */; };
+		D912F7AB25591B0A00944235 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7AA25591B0A00944235 /* ButtonsView.swift */; };
+		D912F7AE25591C1600944235 /* Capacities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7AD25591C1600944235 /* Capacities.swift */; };
 		D919A38C254DABCA003C3F42 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919A38B254DABCA003C3F42 /* TriangleView.swift */; };
 		D919A391254DBFC9003C3F42 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919A390254DBFC8003C3F42 /* RoundedCorner.swift */; };
 		D973E85B254BACF50017FD6A /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973E85A254BACF50017FD6A /* WaveView.swift */; };
 		D973E85E254BB79D0017FD6A /* WaveView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973E85D254BB79D0017FD6A /* WaveView2.swift */; };
+		D998C5842553E200006E71FE /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C5832553E200006E71FE /* Text.swift */; };
+		D998C5882553E24F006E71FE /* TopBarWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C5872553E24F006E71FE /* TopBarWaveView.swift */; };
+		D998C58D2553E362006E71FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C58C2553E362006E71FE /* Constants.swift */; };
+		D998C5912553F88D006E71FE /* BottomBarWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C5902553F88D006E71FE /* BottomBarWaveView.swift */; };
 		D9D86D5E254B104F001EDFF1 /* WaterAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D86D5D254B104F001EDFF1 /* WaterAppApp.swift */; };
 		D9D86D60254B104F001EDFF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D86D5F254B104F001EDFF1 /* ContentView.swift */; };
 		D9D86D62254B1050001EDFF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D86D61254B1050001EDFF1 /* Assets.xcassets */; };
@@ -20,10 +29,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D912F7A12555B72D00944235 /* StateWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateWaveView.swift; sourceTree = "<group>"; };
+		D912F7A42555B7F500944235 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		D912F7A725590EA200944235 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		D912F7AA25591B0A00944235 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		D912F7AD25591C1600944235 /* Capacities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capacities.swift; sourceTree = "<group>"; };
 		D919A38B254DABCA003C3F42 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 		D919A390254DBFC8003C3F42 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		D973E85A254BACF50017FD6A /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		D973E85D254BB79D0017FD6A /* WaveView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView2.swift; sourceTree = "<group>"; };
+		D998C5832553E200006E71FE /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		D998C5872553E24F006E71FE /* TopBarWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarWaveView.swift; sourceTree = "<group>"; };
+		D998C58C2553E362006E71FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D998C5902553F88D006E71FE /* BottomBarWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarWaveView.swift; sourceTree = "<group>"; };
 		D9D86D5A254B104F001EDFF1 /* WaterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D86D5D254B104F001EDFF1 /* WaterAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterAppApp.swift; sourceTree = "<group>"; };
 		D9D86D5F254B104F001EDFF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				D919A38B254DABCA003C3F42 /* TriangleView.swift */,
+				D998C5812553E1A5006E71FE /* MainView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -59,6 +78,38 @@
 				D919A390254DBFC8003C3F42 /* RoundedCorner.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D998C5812553E1A5006E71FE /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				D973E85A254BACF50017FD6A /* WaveView.swift */,
+				D9D86D5F254B104F001EDFF1 /* ContentView.swift */,
+				D998C5872553E24F006E71FE /* TopBarWaveView.swift */,
+				D998C5902553F88D006E71FE /* BottomBarWaveView.swift */,
+				D912F7A12555B72D00944235 /* StateWaveView.swift */,
+				D912F7A42555B7F500944235 /* ScheduleView.swift */,
+				D912F7A725590EA200944235 /* AlertView.swift */,
+				D912F7AA25591B0A00944235 /* ButtonsView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		D998C5822553E1F0006E71FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D998C5832553E200006E71FE /* Text.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D998C58B2553E349006E71FE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D998C58C2553E362006E71FE /* Constants.swift */,
+				D912F7AD25591C1600944235 /* Capacities.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		D9D86D51254B104F001EDFF1 = {
@@ -80,11 +131,11 @@
 		D9D86D5C254B104F001EDFF1 /* WaterApp */ = {
 			isa = PBXGroup;
 			children = (
+				D998C58B2553E349006E71FE /* Base */,
+				D998C5822553E1F0006E71FE /* Extensions */,
 				D919A38F254DBFB2003C3F42 /* Helpers */,
 				D919A38A254DABBC003C3F42 /* Views */,
 				D9D86D5D254B104F001EDFF1 /* WaterAppApp.swift */,
-				D9D86D5F254B104F001EDFF1 /* ContentView.swift */,
-				D973E85A254BACF50017FD6A /* WaveView.swift */,
 				D973E85D254BB79D0017FD6A /* WaveView2.swift */,
 				D9D86D61254B1050001EDFF1 /* Assets.xcassets */,
 				D9D86D66254B1050001EDFF1 /* Persistence.swift */,
@@ -172,13 +223,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D998C5882553E24F006E71FE /* TopBarWaveView.swift in Sources */,
+				D998C58D2553E362006E71FE /* Constants.swift in Sources */,
+				D912F7AE25591C1600944235 /* Capacities.swift in Sources */,
 				D919A391254DBFC9003C3F42 /* RoundedCorner.swift in Sources */,
+				D912F7A52555B7F500944235 /* ScheduleView.swift in Sources */,
 				D9D86D67254B1050001EDFF1 /* Persistence.swift in Sources */,
+				D912F7A825590EA200944235 /* AlertView.swift in Sources */,
+				D912F7AB25591B0A00944235 /* ButtonsView.swift in Sources */,
 				D973E85B254BACF50017FD6A /* WaveView.swift in Sources */,
 				D973E85E254BB79D0017FD6A /* WaveView2.swift in Sources */,
+				D998C5842553E200006E71FE /* Text.swift in Sources */,
 				D9D86D6A254B1050001EDFF1 /* WaterApp.xcdatamodeld in Sources */,
 				D9D86D60254B104F001EDFF1 /* ContentView.swift in Sources */,
+				D912F7A22555B72D00944235 /* StateWaveView.swift in Sources */,
 				D919A38C254DABCA003C3F42 /* TriangleView.swift in Sources */,
+				D998C5912553F88D006E71FE /* BottomBarWaveView.swift in Sources */,
 				D9D86D5E254B104F001EDFF1 /* WaterAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
