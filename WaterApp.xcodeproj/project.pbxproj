@@ -16,8 +16,10 @@
 		D912F7B425592A3E00944235 /* DailyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7B325592A3E00944235 /* DailyGoalView.swift */; };
 		D912F7B825592B5E00944235 /* StatisticButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7B725592B5E00944235 /* StatisticButton.swift */; };
 		D912F7BB25592B8200944235 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7BA25592B8200944235 /* SettingsButton.swift */; };
+		D912F7C2255C4DEE00944235 /* MonthlyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F7C1255C4DEE00944235 /* MonthlyReportView.swift */; };
 		D919A38C254DABCA003C3F42 /* CupScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919A38B254DABCA003C3F42 /* CupScheduleView.swift */; };
 		D919A391254DBFC9003C3F42 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919A390254DBFC8003C3F42 /* RoundedCorner.swift */; };
+		D9643ADB255FF41C009A32C4 /* DayPercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9643ADA255FF41C009A32C4 /* DayPercentView.swift */; };
 		D973E85B254BACF50017FD6A /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973E85A254BACF50017FD6A /* WaveView.swift */; };
 		D973E85E254BB79D0017FD6A /* WaveView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973E85D254BB79D0017FD6A /* WaveView2.swift */; };
 		D998C5842553E200006E71FE /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C5832553E200006E71FE /* Text.swift */; };
@@ -40,8 +42,10 @@
 		D912F7B325592A3E00944235 /* DailyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalView.swift; sourceTree = "<group>"; };
 		D912F7B725592B5E00944235 /* StatisticButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticButton.swift; sourceTree = "<group>"; };
 		D912F7BA25592B8200944235 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		D912F7C1255C4DEE00944235 /* MonthlyReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReportView.swift; sourceTree = "<group>"; };
 		D919A38B254DABCA003C3F42 /* CupScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupScheduleView.swift; sourceTree = "<group>"; };
 		D919A390254DBFC8003C3F42 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		D9643ADA255FF41C009A32C4 /* DayPercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPercentView.swift; sourceTree = "<group>"; };
 		D973E85A254BACF50017FD6A /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		D973E85D254BB79D0017FD6A /* WaveView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView2.swift; sourceTree = "<group>"; };
 		D998C5832553E200006E71FE /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
@@ -67,10 +71,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D912F7C0255C4DB900944235 /* StatisticsView */ = {
+			isa = PBXGroup;
+			children = (
+				D912F7C1255C4DEE00944235 /* MonthlyReportView.swift */,
+				D9643AD9255FF3BA009A32C4 /* WeeklyStatistic */,
+			);
+			path = StatisticsView;
+			sourceTree = "<group>";
+		};
 		D919A38A254DABBC003C3F42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				D919A38B254DABCA003C3F42 /* CupScheduleView.swift */,
+				D912F7C0255C4DB900944235 /* StatisticsView */,
 				D998C5812553E1A5006E71FE /* MainView */,
 			);
 			path = Views;
@@ -82,6 +96,22 @@
 				D919A390254DBFC8003C3F42 /* RoundedCorner.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D9643AD9255FF3BA009A32C4 /* WeeklyStatistic */ = {
+			isa = PBXGroup;
+			children = (
+				D9643ADA255FF41C009A32C4 /* DayPercentView.swift */,
+			);
+			path = WeeklyStatistic;
+			sourceTree = "<group>";
+		};
+		D9643ADE25600422009A32C4 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				D9D86D61254B1050001EDFF1 /* Assets.xcassets */,
+			);
+			path = Res;
 			sourceTree = "<group>";
 		};
 		D998C5812553E1A5006E71FE /* MainView */ = {
@@ -137,13 +167,13 @@
 		D9D86D5C254B104F001EDFF1 /* WaterApp */ = {
 			isa = PBXGroup;
 			children = (
+				D9643ADE25600422009A32C4 /* Res */,
 				D998C58B2553E349006E71FE /* Base */,
 				D998C5822553E1F0006E71FE /* Extensions */,
 				D919A38F254DBFB2003C3F42 /* Helpers */,
 				D919A38A254DABBC003C3F42 /* Views */,
 				D9D86D5D254B104F001EDFF1 /* WaterAppApp.swift */,
 				D973E85D254BB79D0017FD6A /* WaveView2.swift */,
-				D9D86D61254B1050001EDFF1 /* Assets.xcassets */,
 				D9D86D66254B1050001EDFF1 /* Persistence.swift */,
 				D9D86D6B254B1050001EDFF1 /* Info.plist */,
 				D9D86D68254B1050001EDFF1 /* WaterApp.xcdatamodeld */,
@@ -245,6 +275,8 @@
 				D9D86D6A254B1050001EDFF1 /* WaterApp.xcdatamodeld in Sources */,
 				D912F7B425592A3E00944235 /* DailyGoalView.swift in Sources */,
 				D9D86D60254B104F001EDFF1 /* ContentView.swift in Sources */,
+				D9643ADB255FF41C009A32C4 /* DayPercentView.swift in Sources */,
+				D912F7C2255C4DEE00944235 /* MonthlyReportView.swift in Sources */,
 				D912F7A22555B72D00944235 /* StateWaveView.swift in Sources */,
 				D919A38C254DABCA003C3F42 /* CupScheduleView.swift in Sources */,
 				D9D86D5E254B104F001EDFF1 /* WaterAppApp.swift in Sources */,
@@ -312,6 +344,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -366,6 +399,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

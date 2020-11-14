@@ -8,18 +8,25 @@
 import SwiftUI
 
 struct DailyCupsView: View {
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack {
-                Image(systemName: "minus.circle.fill")
+        Button(action: {
+            
+        }, label: {
+            VStack(alignment: .leading, spacing: 10) {
+                
+                HStack {
+                    Image(systemName: "minus.circle.fill")
+                        .foregroundColor(.white)
+                    Text("6/10")
+                        .foregroundColor(.white)
+                        .bold()
+                }
+                Text("300ML Cups")
                     .foregroundColor(.white)
-                Text("6/10")
-                    .foregroundColor(.white)
-                    .bold()
             }
-            Text("300ML Cups")
-                .foregroundColor(.white)
-        }
+        })
+        
     }
 }
 

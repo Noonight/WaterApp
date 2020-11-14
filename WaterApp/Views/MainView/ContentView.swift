@@ -14,13 +14,20 @@ struct ContentView: View {
     
     @State private var alertTime: Date? = Date()
     
+    @State private var modalStatisticsBtn: Bool = false
+    
     var body: some View {
         VStack(spacing: 0) {
             
             WaveView(progress: progress, strength: waveLength)
                 .overlay(
                     HStack {
-                        StatisticButton()
+                        StatisticButton(tap: {
+                            modalStatisticsBtn.toggle()
+                        })
+                        .sheet(isPresented: $modalStatisticsBtn, content: {
+                            MonthlyReportView()
+                        })
                         Spacer()
                         SettingsButton()
                     }
