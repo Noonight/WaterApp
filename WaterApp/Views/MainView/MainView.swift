@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct MainView: View {
     @State private var progress = 0.6
     @State private var waveLength = 5.0 // for action with add water
     
@@ -67,6 +67,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }

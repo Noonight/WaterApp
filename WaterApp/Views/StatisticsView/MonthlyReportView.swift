@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MonthlyReportView: View {
     
+    @State var dayChoosed: DailyDrink?
     @State var date: Date = Date()
     struct WeekDayItem: Identifiable {
         let id = UUID()
@@ -59,7 +60,7 @@ struct MonthlyReportView: View {
                 Rectangle()
                     .fill(Color.black)
                     .frame(height: 0.5)
-                HStack {
+                HStack(alignment: .center, spacing: 10) {
                     ForEach(weekDays) { (weekDay: WeekDayItem) in
                         VStack {
                             Text(weekDay.weekDay)
@@ -69,6 +70,21 @@ struct MonthlyReportView: View {
                     }
                 }
                 .padding([.leading, .trailing])
+//                .background(Color.red)
+                if let dayChoosed = dayChoosed {
+                    DailyLogView(dailyDrink: dayChoosed)
+                } else {
+                    HStack(alignment: .center) {
+                        Spacer()
+                        VStack {
+                            Spacer()
+                            Text("Tap on week day to see log")
+                                .font(.title2)
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                }
                 Spacer()
             }
             .navigationTitle("Monthly Report")
@@ -79,6 +95,5 @@ struct MonthlyReportView: View {
 struct MonthlyReportView_Previews: PreviewProvider {
     static var previews: some View {
         MonthlyReportView()
-//            .padding()
     }
 }

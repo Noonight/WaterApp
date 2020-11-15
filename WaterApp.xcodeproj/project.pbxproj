@@ -24,8 +24,11 @@
 		D973E85E254BB79D0017FD6A /* WaveView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973E85D254BB79D0017FD6A /* WaveView2.swift */; };
 		D998C5842553E200006E71FE /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C5832553E200006E71FE /* Text.swift */; };
 		D998C58D2553E362006E71FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C58C2553E362006E71FE /* Constants.swift */; };
+		D9BA60F42561015A0058D719 /* DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA60F32561015A0058D719 /* DailyLog.swift */; };
+		D9BA60F9256102890058D719 /* DailyDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA60F8256102890058D719 /* DailyDrink.swift */; };
+		D9BA6102256119990058D719 /* DailyLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA6101256119990058D719 /* DailyLogView.swift */; };
 		D9D86D5E254B104F001EDFF1 /* WaterAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D86D5D254B104F001EDFF1 /* WaterAppApp.swift */; };
-		D9D86D60254B104F001EDFF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D86D5F254B104F001EDFF1 /* ContentView.swift */; };
+		D9D86D60254B104F001EDFF1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D86D5F254B104F001EDFF1 /* MainView.swift */; };
 		D9D86D62254B1050001EDFF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D86D61254B1050001EDFF1 /* Assets.xcassets */; };
 		D9D86D65254B1050001EDFF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D86D64254B1050001EDFF1 /* Preview Assets.xcassets */; };
 		D9D86D67254B1050001EDFF1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D86D66254B1050001EDFF1 /* Persistence.swift */; };
@@ -50,9 +53,12 @@
 		D973E85D254BB79D0017FD6A /* WaveView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView2.swift; sourceTree = "<group>"; };
 		D998C5832553E200006E71FE /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		D998C58C2553E362006E71FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D9BA60F32561015A0058D719 /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLog.swift; sourceTree = "<group>"; };
+		D9BA60F8256102890058D719 /* DailyDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDrink.swift; sourceTree = "<group>"; };
+		D9BA6101256119990058D719 /* DailyLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLogView.swift; sourceTree = "<group>"; };
 		D9D86D5A254B104F001EDFF1 /* WaterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D86D5D254B104F001EDFF1 /* WaterAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterAppApp.swift; sourceTree = "<group>"; };
-		D9D86D5F254B104F001EDFF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9D86D5F254B104F001EDFF1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D9D86D61254B1050001EDFF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D86D64254B1050001EDFF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9D86D66254B1050001EDFF1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				D919A38B254DABCA003C3F42 /* CupScheduleView.swift */,
+				D9BA60FB256119430058D719 /* DailyLog */,
 				D912F7C0255C4DB900944235 /* StatisticsView */,
 				D998C5812553E1A5006E71FE /* MainView */,
 			);
@@ -118,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				D973E85A254BACF50017FD6A /* WaveView.swift */,
-				D9D86D5F254B104F001EDFF1 /* ContentView.swift */,
+				D9D86D5F254B104F001EDFF1 /* MainView.swift */,
 				D912F7B325592A3E00944235 /* DailyGoalView.swift */,
 				D912F7A12555B72D00944235 /* StateWaveView.swift */,
 				D912F7A42555B7F500944235 /* ScheduleView.swift */,
@@ -148,6 +155,23 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		D9BA60F22560FF300058D719 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA60F32561015A0058D719 /* DailyLog.swift */,
+				D9BA60F8256102890058D719 /* DailyDrink.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9BA60FB256119430058D719 /* DailyLog */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA6101256119990058D719 /* DailyLogView.swift */,
+			);
+			path = DailyLog;
+			sourceTree = "<group>";
+		};
 		D9D86D51254B104F001EDFF1 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +191,7 @@
 		D9D86D5C254B104F001EDFF1 /* WaterApp */ = {
 			isa = PBXGroup;
 			children = (
+				D9BA60F22560FF300058D719 /* Models */,
 				D9643ADE25600422009A32C4 /* Res */,
 				D998C58B2553E349006E71FE /* Base */,
 				D998C5822553E1F0006E71FE /* Extensions */,
@@ -274,11 +299,14 @@
 				D998C5842553E200006E71FE /* Text.swift in Sources */,
 				D9D86D6A254B1050001EDFF1 /* WaterApp.xcdatamodeld in Sources */,
 				D912F7B425592A3E00944235 /* DailyGoalView.swift in Sources */,
-				D9D86D60254B104F001EDFF1 /* ContentView.swift in Sources */,
+				D9D86D60254B104F001EDFF1 /* MainView.swift in Sources */,
 				D9643ADB255FF41C009A32C4 /* DayPercentView.swift in Sources */,
 				D912F7C2255C4DEE00944235 /* MonthlyReportView.swift in Sources */,
 				D912F7A22555B72D00944235 /* StateWaveView.swift in Sources */,
+				D9BA60F42561015A0058D719 /* DailyLog.swift in Sources */,
 				D919A38C254DABCA003C3F42 /* CupScheduleView.swift in Sources */,
+				D9BA6102256119990058D719 /* DailyLogView.swift in Sources */,
+				D9BA60F9256102890058D719 /* DailyDrink.swift in Sources */,
 				D9D86D5E254B104F001EDFF1 /* WaterAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
