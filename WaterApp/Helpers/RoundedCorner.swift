@@ -18,7 +18,10 @@ struct RoundedCorner: Shape {
 }
 
 extension View {
-    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
-        clipShape(RoundedCorner(radius: radius, corners: corners))
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View { // TODO: Check it later
+//        clipShape(RoundedCorner(radius: radius, corners: corners))
+        overlay(
+            RoundedCorner(radius: radius, corners: corners)
+        )
     }
 }

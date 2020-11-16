@@ -21,13 +21,13 @@
 		D919A391254DBFC9003C3F42 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919A390254DBFC8003C3F42 /* RoundedCorner.swift */; };
 		D9643ADB255FF41C009A32C4 /* DayPercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9643ADA255FF41C009A32C4 /* DayPercentView.swift */; };
 		D973E85B254BACF50017FD6A /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973E85A254BACF50017FD6A /* WaveView.swift */; };
-		D973E85E254BB79D0017FD6A /* WaveView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973E85D254BB79D0017FD6A /* WaveView2.swift */; };
 		D998C5842553E200006E71FE /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C5832553E200006E71FE /* Text.swift */; };
 		D998C58D2553E362006E71FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C58C2553E362006E71FE /* Constants.swift */; };
 		D9BA60F42561015A0058D719 /* DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA60F32561015A0058D719 /* DailyLog.swift */; };
 		D9BA60F9256102890058D719 /* DailyDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA60F8256102890058D719 /* DailyDrink.swift */; };
 		D9BA6102256119990058D719 /* DailyLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA6101256119990058D719 /* DailyLogView.swift */; };
-		D9D86D5E254B104F001EDFF1 /* WaterAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D86D5D254B104F001EDFF1 /* WaterAppApp.swift */; };
+		D9BA610F2562401C0058D719 /* TestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA610E2562401C0058D719 /* TestsView.swift */; };
+		D9D86D5E254B104F001EDFF1 /* WaterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D86D5D254B104F001EDFF1 /* WaterApp.swift */; };
 		D9D86D60254B104F001EDFF1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D86D5F254B104F001EDFF1 /* MainView.swift */; };
 		D9D86D62254B1050001EDFF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D86D61254B1050001EDFF1 /* Assets.xcassets */; };
 		D9D86D65254B1050001EDFF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D86D64254B1050001EDFF1 /* Preview Assets.xcassets */; };
@@ -50,14 +50,14 @@
 		D919A390254DBFC8003C3F42 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		D9643ADA255FF41C009A32C4 /* DayPercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPercentView.swift; sourceTree = "<group>"; };
 		D973E85A254BACF50017FD6A /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
-		D973E85D254BB79D0017FD6A /* WaveView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView2.swift; sourceTree = "<group>"; };
 		D998C5832553E200006E71FE /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		D998C58C2553E362006E71FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D9BA60F32561015A0058D719 /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLog.swift; sourceTree = "<group>"; };
 		D9BA60F8256102890058D719 /* DailyDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDrink.swift; sourceTree = "<group>"; };
 		D9BA6101256119990058D719 /* DailyLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLogView.swift; sourceTree = "<group>"; };
+		D9BA610E2562401C0058D719 /* TestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsView.swift; sourceTree = "<group>"; };
 		D9D86D5A254B104F001EDFF1 /* WaterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9D86D5D254B104F001EDFF1 /* WaterAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterAppApp.swift; sourceTree = "<group>"; };
+		D9D86D5D254B104F001EDFF1 /* WaterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterApp.swift; sourceTree = "<group>"; };
 		D9D86D5F254B104F001EDFF1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D9D86D61254B1050001EDFF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D86D64254B1050001EDFF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -89,7 +89,8 @@
 		D919A38A254DABBC003C3F42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D919A38B254DABCA003C3F42 /* CupScheduleView.swift */,
+				D9BA610725623C860058D719 /* Common */,
+				D9BA610D256240100058D719 /* Tests */,
 				D9BA60FB256119430058D719 /* DailyLog */,
 				D912F7C0255C4DB900944235 /* StatisticsView */,
 				D998C5812553E1A5006E71FE /* MainView */,
@@ -113,12 +114,12 @@
 			path = WeeklyStatistic;
 			sourceTree = "<group>";
 		};
-		D9643ADE25600422009A32C4 /* Res */ = {
+		D9643ADE25600422009A32C4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				D9D86D61254B1050001EDFF1 /* Assets.xcassets */,
 			);
-			path = Res;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D998C5812553E1A5006E71FE /* MainView */ = {
@@ -172,6 +173,47 @@
 			path = DailyLog;
 			sourceTree = "<group>";
 		};
+		D9BA610725623C860058D719 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D919A38B254DABCA003C3F42 /* CupScheduleView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D9BA610925623F440058D719 /* StartUp */ = {
+			isa = PBXGroup;
+			children = (
+				D9D86D5D254B104F001EDFF1 /* WaterApp.swift */,
+			);
+			path = StartUp;
+			sourceTree = "<group>";
+		};
+		D9BA610A25623F590058D719 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D9D86D6B254B1050001EDFF1 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		D9BA610B25623F770058D719 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D9D86D66254B1050001EDFF1 /* Persistence.swift */,
+				D9D86D68254B1050001EDFF1 /* WaterApp.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D9BA610D256240100058D719 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA610E2562401C0058D719 /* TestsView.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		D9D86D51254B104F001EDFF1 = {
 			isa = PBXGroup;
 			children = (
@@ -191,17 +233,15 @@
 		D9D86D5C254B104F001EDFF1 /* WaterApp */ = {
 			isa = PBXGroup;
 			children = (
+				D9BA610B25623F770058D719 /* CoreData */,
+				D9BA610A25623F590058D719 /* SupportFiles */,
+				D9BA610925623F440058D719 /* StartUp */,
 				D9BA60F22560FF300058D719 /* Models */,
-				D9643ADE25600422009A32C4 /* Res */,
+				D9643ADE25600422009A32C4 /* Resources */,
 				D998C58B2553E349006E71FE /* Base */,
 				D998C5822553E1F0006E71FE /* Extensions */,
 				D919A38F254DBFB2003C3F42 /* Helpers */,
 				D919A38A254DABBC003C3F42 /* Views */,
-				D9D86D5D254B104F001EDFF1 /* WaterAppApp.swift */,
-				D973E85D254BB79D0017FD6A /* WaveView2.swift */,
-				D9D86D66254B1050001EDFF1 /* Persistence.swift */,
-				D9D86D6B254B1050001EDFF1 /* Info.plist */,
-				D9D86D68254B1050001EDFF1 /* WaterApp.xcdatamodeld */,
 				D9D86D63254B1050001EDFF1 /* Preview Content */,
 			);
 			path = WaterApp;
@@ -293,7 +333,6 @@
 				D912F7B125592A2000944235 /* DailyCupsView.swift in Sources */,
 				D912F7AB25591B0A00944235 /* ButtonsView.swift in Sources */,
 				D973E85B254BACF50017FD6A /* WaveView.swift in Sources */,
-				D973E85E254BB79D0017FD6A /* WaveView2.swift in Sources */,
 				D912F7B825592B5E00944235 /* StatisticButton.swift in Sources */,
 				D912F7BB25592B8200944235 /* SettingsButton.swift in Sources */,
 				D998C5842553E200006E71FE /* Text.swift in Sources */,
@@ -301,13 +340,14 @@
 				D912F7B425592A3E00944235 /* DailyGoalView.swift in Sources */,
 				D9D86D60254B104F001EDFF1 /* MainView.swift in Sources */,
 				D9643ADB255FF41C009A32C4 /* DayPercentView.swift in Sources */,
+				D9BA610F2562401C0058D719 /* TestsView.swift in Sources */,
 				D912F7C2255C4DEE00944235 /* MonthlyReportView.swift in Sources */,
 				D912F7A22555B72D00944235 /* StateWaveView.swift in Sources */,
 				D9BA60F42561015A0058D719 /* DailyLog.swift in Sources */,
 				D919A38C254DABCA003C3F42 /* CupScheduleView.swift in Sources */,
 				D9BA6102256119990058D719 /* DailyLogView.swift in Sources */,
 				D9BA60F9256102890058D719 /* DailyDrink.swift in Sources */,
-				D9D86D5E254B104F001EDFF1 /* WaterAppApp.swift in Sources */,
+				D9D86D5E254B104F001EDFF1 /* WaterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +481,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WaterApp/Preview Content\"";
 				DEVELOPMENT_TEAM = MT83Z9G3C6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = WaterApp/Info.plist;
+				INFOPLIST_FILE = WaterApp/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,7 +503,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WaterApp/Preview Content\"";
 				DEVELOPMENT_TEAM = MT83Z9G3C6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = WaterApp/Info.plist;
+				INFOPLIST_FILE = WaterApp/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

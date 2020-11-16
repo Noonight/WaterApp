@@ -57,9 +57,7 @@ struct MonthlyReportView: View {
                     Text("2450ML")
                 }
                 .padding([.leading, .trailing])
-                Rectangle()
-                    .fill(Color.black)
-                    .frame(height: 0.5)
+                Divider()
                 HStack(alignment: .center, spacing: 10) {
                     ForEach(weekDays) { (weekDay: WeekDayItem) in
                         VStack {
@@ -69,8 +67,9 @@ struct MonthlyReportView: View {
                         }
                     }
                 }
+                .frame(maxHeight: .infinity, alignment: .center)
                 .padding([.leading, .trailing])
-//                .background(Color.red)
+                
                 if let dayChoosed = dayChoosed {
                     DailyLogView(dailyDrink: dayChoosed)
                 } else {
@@ -87,7 +86,7 @@ struct MonthlyReportView: View {
                 }
                 Spacer()
             }
-            .navigationTitle("Monthly Report")
+            .navigationTitle("Weekly Report")
         }
     }
 }
@@ -95,5 +94,6 @@ struct MonthlyReportView: View {
 struct MonthlyReportView_Previews: PreviewProvider {
     static var previews: some View {
         MonthlyReportView()
+            .previewDevice("iPhone SE (2nd generation)")
     }
 }

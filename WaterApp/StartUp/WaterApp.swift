@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct WaterAppApp: App {
+struct WaterApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DayPercentView: View {
     
-    @State var width: CGFloat = 48.0 // 40 minimum for good text matching
+//    @State var width: CGFloat = 48.0 // 40 minimum for good text matching
     @State var height: CGFloat = 0.0
     var fullHeight: CGFloat = 250
     var percent: Int = 0
@@ -25,11 +25,11 @@ struct DayPercentView: View {
             ZStack(alignment: .bottom) {
                 RoundedRectangle(cornerRadius: 5, style: .continuous)
                     .fill(Color.gray)
-                    .frame(width: width, height: fullHeight)
+                    .frame(/*width: width, */height: fullHeight) // width calculated in super view (HStack)
                 ZStack {
                     RoundedRectangle(cornerRadius: 5, style: .continuous)
                         .fill(Color.blue)
-                        .frame(width: width, height: height)
+                        .frame(/*width: width, */height: height)
                     if percent >= 10 {
                         Text("\(percent)%")
                             .foregroundColor(.white)
