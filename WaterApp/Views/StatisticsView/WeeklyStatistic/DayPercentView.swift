@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DayPercentView: View {
     
-//    @State var width: CGFloat = 48.0 // 40 minimum for good text matching
     @State var height: CGFloat = 0.0
     var fullHeight: CGFloat = 250
     var percent: Int = 0
@@ -20,16 +19,25 @@ struct DayPercentView: View {
         return onePerc * perc
     }
     
+    let animation = Animation.linear.repeatForever().speed(0.5)
+    
     var body: some View {
         VStack {
             ZStack(alignment: .bottom) {
                 RoundedRectangle(cornerRadius: 5, style: .continuous)
                     .fill(Color.gray)
-                    .frame(/*width: width, */height: fullHeight) // width calculated in super view (HStack)
+                    .frame(height: fullHeight)
                 ZStack {
                     RoundedRectangle(cornerRadius: 5, style: .continuous)
                         .fill(Color.blue)
-                        .frame(/*width: width, */height: height)
+                        .frame(height: height)
+//                        .modifier(
+//                            SizeTransition(height: calculateHeight())
+//                        )
+//                        .animation(animation)
+                        .onAppear {
+                            self.height = calculateHeight()
+                        }
                     if percent >= 10 {
                         Text("\(percent)%")
                             .foregroundColor(.white)
@@ -38,17 +46,35 @@ struct DayPercentView: View {
                 }
             }
         }
-        .onAppear {
-            self.height = calculateHeight()
-        }
+//        .onAppear {
+//            self.height = calculateHeight()
+//        }
         
+    }
+}
+
+struct SizeTransition: AnimatableModifier {
+    var height: CGFloat
+
+    var animatableData: CGFloat {
+        get { height }
+        set {
+            height = newValue
+        }
+    }
+
+    func body(content: Content) -> some View {
+        print(height)
+        return content.frame(
+            height: height
+        )
     }
 }
 
 struct DayPercentView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            DayPercentView(percent: 100)
+            DayPercentView(percent: 55)
         }
     }
 }

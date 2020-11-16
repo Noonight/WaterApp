@@ -7,17 +7,21 @@
 
 import SwiftUI
 
+//extension AnyTransition {
+//    static func sizeTransition(from: CGSize, to: CGSize) -> AnyTransition {
+//        .modifier(
+//            active: SizeTransition(size: from),
+//            identity: SizeTransition(size: to)
+//        )
+//    }
+//}
+//
+
+
 struct TestsView: View {
 
-    
     var body: some View {
-        ZStack {
-            ContainerRelativeShape()
-                .inset(by: 4)
-                .fill(Color.blue)
-            Text("Hello, World!")
-                .font(.headline)
-        }
+        Text("asd")
     }
 }
 
