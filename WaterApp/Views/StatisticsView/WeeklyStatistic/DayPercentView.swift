@@ -31,10 +31,6 @@ struct DayPercentView: View {
                     RoundedRectangle(cornerRadius: 5, style: .continuous)
                         .fill(Color.blue)
                         .frame(height: height)
-//                        .modifier(
-//                            SizeTransition(height: calculateHeight())
-//                        )
-//                        .animation(animation)
                         .onAppear {
                             self.height = calculateHeight()
                         }
@@ -46,28 +42,6 @@ struct DayPercentView: View {
                 }
             }
         }
-//        .onAppear {
-//            self.height = calculateHeight()
-//        }
-        
-    }
-}
-
-struct SizeTransition: AnimatableModifier {
-    var height: CGFloat
-
-    var animatableData: CGFloat {
-        get { height }
-        set {
-            height = newValue
-        }
-    }
-
-    func body(content: Content) -> some View {
-        print(height)
-        return content.frame(
-            height: height
-        )
     }
 }
 

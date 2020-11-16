@@ -14,6 +14,7 @@ struct WaterApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+//            ProgressRectangleView(progress: 0.8, animated: false)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

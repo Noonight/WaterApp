@@ -33,6 +33,7 @@
 		D9D86D65254B1050001EDFF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D86D64254B1050001EDFF1 /* Preview Assets.xcassets */; };
 		D9D86D67254B1050001EDFF1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D86D66254B1050001EDFF1 /* Persistence.swift */; };
 		D9D86D6A254B1050001EDFF1 /* WaterApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9D86D68254B1050001EDFF1 /* WaterApp.xcdatamodeld */; };
+		D9FE74062562EF4100BD5D01 /* ProgressRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FE74052562EF4100BD5D01 /* ProgressRectangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		D9D86D66254B1050001EDFF1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D9D86D69254B1050001EDFF1 /* WaterApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WaterApp.xcdatamodel; sourceTree = "<group>"; };
 		D9D86D6B254B1050001EDFF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9FE74052562EF4100BD5D01 /* ProgressRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRectangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				D9643ADA255FF41C009A32C4 /* DayPercentView.swift */,
+				D9FE74052562EF4100BD5D01 /* ProgressRectangleView.swift */,
 			);
 			path = WeeklyStatistic;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9FE74062562EF4100BD5D01 /* ProgressRectangleView.swift in Sources */,
 				D998C58D2553E362006E71FE /* Constants.swift in Sources */,
 				D912F7AE25591C1600944235 /* Capacities.swift in Sources */,
 				D919A391254DBFC9003C3F42 /* RoundedCorner.swift in Sources */,
