@@ -21,6 +21,7 @@
 		D919A391254DBFC9003C3F42 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919A390254DBFC8003C3F42 /* RoundedCorner.swift */; };
 		D9643ADB255FF41C009A32C4 /* DayPercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9643ADA255FF41C009A32C4 /* DayPercentView.swift */; };
 		D973E85B254BACF50017FD6A /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973E85A254BACF50017FD6A /* WaveView.swift */; };
+		D978E6DE25639F2600ED365B /* CGFloat+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978E6DD25639F2600ED365B /* CGFloat+Convert.swift */; };
 		D998C5842553E200006E71FE /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C5832553E200006E71FE /* Text.swift */; };
 		D998C58D2553E362006E71FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C58C2553E362006E71FE /* Constants.swift */; };
 		D9BA60F42561015A0058D719 /* DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA60F32561015A0058D719 /* DailyLog.swift */; };
@@ -51,6 +52,7 @@
 		D919A390254DBFC8003C3F42 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		D9643ADA255FF41C009A32C4 /* DayPercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPercentView.swift; sourceTree = "<group>"; };
 		D973E85A254BACF50017FD6A /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		D978E6DD25639F2600ED365B /* CGFloat+Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Convert.swift"; sourceTree = "<group>"; };
 		D998C5832553E200006E71FE /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		D998C58C2553E362006E71FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D9BA60F32561015A0058D719 /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLog.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				D998C5832553E200006E71FE /* Text.swift */,
+				D978E6DD25639F2600ED365B /* CGFloat+Convert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				D919A391254DBFC9003C3F42 /* RoundedCorner.swift in Sources */,
 				D912F7A52555B7F500944235 /* ScheduleView.swift in Sources */,
 				D9D86D67254B1050001EDFF1 /* Persistence.swift in Sources */,
+				D978E6DE25639F2600ED365B /* CGFloat+Convert.swift in Sources */,
 				D912F7A825590EA200944235 /* AlertView.swift in Sources */,
 				D912F7B125592A2000944235 /* DailyCupsView.swift in Sources */,
 				D912F7AB25591B0A00944235 /* ButtonsView.swift in Sources */,

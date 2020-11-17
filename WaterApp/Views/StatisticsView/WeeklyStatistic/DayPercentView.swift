@@ -12,6 +12,7 @@ struct DayPercentView: View {
     @State var height: CGFloat = 0.0
     var fullHeight: CGFloat = 250
     var percent: Int = 0
+    @State var animate: Bool = false
     
     private func calculateHeight() -> CGFloat {
         let perc = CGFloat(percent)
@@ -27,17 +28,25 @@ struct DayPercentView: View {
                 RoundedRectangle(cornerRadius: 5, style: .continuous)
                     .fill(Color.gray)
                     .frame(height: fullHeight)
-                ZStack {
-                    RoundedRectangle(cornerRadius: 5, style: .continuous)
-                        .fill(Color.blue)
-                        .frame(height: height)
-                        .onAppear {
-                            self.height = calculateHeight()
+                GeometryReader { fullStack in
+                    ZStack {
+    //                    RoundedRectangle(cornerRadius: 5, style: .continuous)
+    //                        .fill(Color.blue)
+    //                        .frame(width: 50, height: height)
+    //                        .animation(animation)
+    //                        .onAppear {
+    //                            self.height = calculateHeight()
+    //                        }
+                        
+                        ProgressRectangleView(progress: CGFloat.percentFromInt(percent), animated: animate)
+                            .foregroundColor(.blue)
+                            .frame(width: fullStack.size.width, height: fullHeight)
+                            
+                        if percent >= 10 {
+                            Text("\(percent)%")
+                                .foregroundColor(.white)
+                                .bold()
                         }
-                    if percent >= 10 {
-                        Text("\(percent)%")
-                            .foregroundColor(.white)
-                            .bold()
                     }
                 }
             }
@@ -48,7 +57,7 @@ struct DayPercentView: View {
 struct DayPercentView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            DayPercentView(percent: 55)
+            DayPercentView(percent: 30)
         }
     }
 }

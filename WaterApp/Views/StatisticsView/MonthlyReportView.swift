@@ -71,7 +71,7 @@ struct MonthlyReportView: View {
                             VStack {
                                 Text(weekDay.weekDay)
                                     .bold()
-                                DayPercentView(percent: weekDay.percent)
+                                DayPercentView(percent: weekDay.percent, animate: true)
                                     .onTapGesture {
                                         openWeekDay.toggle()
                                     }

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ProgressRectangle: Shape {
     var progress: CGFloat
-    var animated: Bool
     
     var animatableData: CGFloat {
         get { progress }
@@ -54,7 +53,7 @@ struct ProgressRectangleView: View {
     let animation = Animation.linear.repeatForever().speed(0.3)
     
     var body: some View {
-        ProgressRectangle(progress: progress, animated: animated)
+        ProgressRectangle(progress: progress)
             .fill(Color.blue)
 //            .frame(width: 100, height: 300)
 //            .overlay(
