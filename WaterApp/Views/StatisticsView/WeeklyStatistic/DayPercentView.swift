@@ -12,7 +12,7 @@ struct DayPercentView: View {
     @State var height: CGFloat = 0.0
     var fullHeight: CGFloat = 250
     var percent: Int = 0
-    @State var animate: Bool = false
+    @State var animate: Bool = true
     
     private func calculateHeight() -> CGFloat {
         let perc = CGFloat(percent)
@@ -23,24 +23,24 @@ struct DayPercentView: View {
     let animation = Animation.linear.repeatForever().speed(0.5)
     
     var body: some View {
-        VStack {
-            ZStack(alignment: .bottom) {
-                RoundedRectangle(cornerRadius: 5, style: .continuous)
-                    .fill(Color.gray)
-                    .frame(height: fullHeight)
-                GeometryReader { fullStack in
+        GeometryReader { fullView in
+            VStack {
+                ZStack(alignment: .bottom) {
+                    RoundedRectangle(cornerRadius: 5, style: .continuous)
+                        .fill(Color.gray)
+                        .frame(height: fullHeight)
                     ZStack {
-    //                    RoundedRectangle(cornerRadius: 5, style: .continuous)
-    //                        .fill(Color.blue)
-    //                        .frame(width: 50, height: height)
-    //                        .animation(animation)
-    //                        .onAppear {
-    //                            self.height = calculateHeight()
-    //                        }
+        //                   RoundedRectangle(cornerRadius: 5, style: .continuous)
+        //                       .fill(Color.blue)
+        //                       .frame(width: 50, height: height)
+        //                       .animation(animation)
+        //                       .onAppear {
+        //                           self.height = calculateHeight()
+        //                       }
                         
                         ProgressRectangleView(progress: CGFloat.percentFromInt(percent), animated: animate)
                             .foregroundColor(.blue)
-                            .frame(width: fullStack.size.width, height: fullHeight)
+//                            .frame(width: fullStack.size.width, height: fullHeight)
                             
                         if percent >= 10 {
                             Text("\(percent)%")
@@ -48,16 +48,20 @@ struct DayPercentView: View {
                                 .bold()
                         }
                     }
+                    
                 }
             }
+            .frame(width: fullView.size.width, height: fullHeight, alignment: .center)
+//            .padding()
         }
+        
     }
 }
 
 struct DayPercentView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            DayPercentView(percent: 30)
+            DayPercentView(percent: 35)
         }
     }
 }
