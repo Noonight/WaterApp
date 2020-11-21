@@ -44,49 +44,54 @@ struct MonthlyReportView: View {
     var body: some View {
         NavigationView {
             
-            VStack(alignment: .leading, spacing: 8) {
-                DatePicker("Choose date", selection: $date, displayedComponents: DatePicker<Text>.Components.date)
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .leading, spacing: 8) {
+                    DatePicker("Choose date", selection: $date, displayedComponents: DatePicker<Text>.Components.date)
+                        .datePickerStyle(GraphicalDatePickerStyle())
+                        .padding([.leading, .trailing], 18)
+                        
+                    Text(datePeriod(date: date))
+                        .font(Font.system(size: 16))
+                        .foregroundColor(.gray)
+                        .padding([.leading, .trailing])
+                    HStack(alignment: .center) {
+                        Text("Average:")
+                        Text("2450ML")
+                    }
                     .padding([.leading, .trailing])
                     
-                Text(datePeriod(date: date))
-                    .font(Font.system(size: 16))
-                    .foregroundColor(.gray)
+                    Divider()
+                    
+                    HStack(alignment: .center, spacing: 10) {
+                        ForEach(weekDays) { (weekDay: WeekDayItem) in
+                            VStack {
+                                Text(weekDay.weekDay)
+                                    .bold()
+                                DayPercentView(percent: weekDay.percent)
+                            }
+                        }
+                    }
+                    .frame(maxHeight: .infinity, alignment: .center)
                     .padding([.leading, .trailing])
-                HStack(alignment: .center) {
-                    Text("Average:")
-                    Text("2450ML")
-                }
-                .padding([.leading, .trailing])
-                Divider()
-                HStack(alignment: .center, spacing: 10) {
-                    ForEach(weekDays) { (weekDay: WeekDayItem) in
-                        VStack {
-                            Text(weekDay.weekDay)
-                                .bold()
-                            DayPercentView(percent: weekDay.percent)
-                        }
-                    }
-                }
-                .frame(maxHeight: .infinity, alignment: .center)
-                .padding([.leading, .trailing])
-                
-                if let dayChoosed = dayChoosed {
-                    DailyLogView(dailyDrink: dayChoosed)
-                } else {
-                    HStack(alignment: .center) {
-                        Spacer()
-                        VStack {
+                    
+                    if let dayChoosed = dayChoosed {
+                        DailyLogView(dailyDrink: dayChoosed)
+                    } else {
+                        HStack(alignment: .center) {
                             Spacer()
-                            Text("Tap on week day to see log")
-                                .font(.title2)
+                            VStack {
+                                Spacer()
+                                Text("Tap on week day to see log")
+                                    .font(.title2)
+                                Spacer()
+                            }
                             Spacer()
                         }
-                        Spacer()
                     }
+                    Spacer()
                 }
-                Spacer()
+                .navigationTitle("Weekly Report")
             }
-            .navigationTitle("Weekly Report")
         }
     }
 }

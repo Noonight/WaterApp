@@ -24,7 +24,7 @@ struct DayPercentView: View {
         VStack {
             ZStack(alignment: .bottom) {
                 RoundedRectangle(cornerRadius: 5, style: .continuous)
-                    .fill(Color.gray)
+                    .fill(Color.lightGray)
                     .frame(/*width: width, */height: fullHeight) // width calculated in super view (HStack)
                 ZStack {
                     RoundedRectangle(cornerRadius: 5, style: .continuous)
@@ -48,7 +48,7 @@ struct DayPercentView: View {
 struct DayPercentView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            DayPercentView(percent: 100)
+            DayPercentView(percent: 76)
         }
     }
 }

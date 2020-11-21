@@ -23,6 +23,7 @@
 		D973E85B254BACF50017FD6A /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973E85A254BACF50017FD6A /* WaveView.swift */; };
 		D998C5842553E200006E71FE /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C5832553E200006E71FE /* Text.swift */; };
 		D998C58D2553E362006E71FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998C58C2553E362006E71FE /* Constants.swift */; };
+		D9AD1E632568A046006E5C6B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD1E622568A046006E5C6B /* Color.swift */; };
 		D9BA60F42561015A0058D719 /* DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA60F32561015A0058D719 /* DailyLog.swift */; };
 		D9BA60F9256102890058D719 /* DailyDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA60F8256102890058D719 /* DailyDrink.swift */; };
 		D9BA6102256119990058D719 /* DailyLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA6101256119990058D719 /* DailyLogView.swift */; };
@@ -52,6 +53,7 @@
 		D973E85A254BACF50017FD6A /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		D998C5832553E200006E71FE /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		D998C58C2553E362006E71FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D9AD1E622568A046006E5C6B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		D9BA60F32561015A0058D719 /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLog.swift; sourceTree = "<group>"; };
 		D9BA60F8256102890058D719 /* DailyDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDrink.swift; sourceTree = "<group>"; };
 		D9BA6101256119990058D719 /* DailyLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLogView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				D998C5832553E200006E71FE /* Text.swift */,
+				D9AD1E622568A046006E5C6B /* Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				D9643ADB255FF41C009A32C4 /* DayPercentView.swift in Sources */,
 				D9BA610F2562401C0058D719 /* TestsView.swift in Sources */,
 				D912F7C2255C4DEE00944235 /* MonthlyReportView.swift in Sources */,
+				D9AD1E632568A046006E5C6B /* Color.swift in Sources */,
 				D912F7A22555B72D00944235 /* StateWaveView.swift in Sources */,
 				D9BA60F42561015A0058D719 /* DailyLog.swift in Sources */,
 				D919A38C254DABCA003C3F42 /* CupScheduleView.swift in Sources */,

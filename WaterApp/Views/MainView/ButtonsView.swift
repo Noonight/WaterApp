@@ -35,8 +35,6 @@ struct ButtonsView: View {
         self.capacityBtns.append(BtnItem(imageName: "loupe", capacity: .ml500))
         self.capacityBtns.append(BtnItem(imageName: "graduationcap.fill", capacity: .ml1000))
         self.capacityBtns.append(BtnItem(imageName: "drop.fill", capacity: .custom))
-        
-        print(capacityBtns)
     }
     
     var body: some View {
